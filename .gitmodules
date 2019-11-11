@@ -1,9 +1,6 @@
 [submodule "nvim/.config/nvim/plugged/auto-pairs"]
 	path = nvim/.config/nvim/plugged/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
-[submodule "nvim/.config/nvim/plugger/nerdtree"]
-	path = nvim/.config/nvim/plugger/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "nvim/.config/nvim/plugged/nerdtree"]
 	path = nvim/.config/nvim/plugged/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
