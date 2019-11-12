@@ -1,6 +1,4 @@
-# Enter the void 
-
-*screenshots here*
+# Enter the void
 
 I tried to make it minimal yet available to use all the tools I need and without refusing some decorations. It can be any distro (with some modifications) but I really like void at the moment for simplicity and minimalism. If you want to replicate something similar in void, install it on your computer and follow instructions below.
 
@@ -41,6 +39,8 @@ dhcpcd <interface_name>
 
 To make updating and installing packages fast we need to change mirror according to your region. 
 
+*process explanation here*
+
 # Packages
 
 1. Clone this repo if you haven't already:
@@ -60,8 +60,20 @@ sudo xbps-install -S git
 chmod +x pkg.sh
 ./pkg.sh
 ```
-
 **Attention!** `pkg.sh` contains only 2 commands: `xbps-install -Syu` and `xbps-install -S ...packages`. You can remove all packages under `#optional` or add more. Script is only a shortcut so you don't have to type package names.
+
+# Configs
+
+To install configs go to void directory which you cloned in previous step:
+
+```sh
+cd ~/void
+rm README.md pkg.sh
+stow -t ~/ *
+```
+Now logout or reboot and hopefully you have something like this:
+
+*screenshots here*
 
 # Links
 
