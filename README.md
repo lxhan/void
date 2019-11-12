@@ -75,8 +75,7 @@ chmod +x fonts/fonts.sh
 To install configs go to void directory which you cloned in previous step:
 
 ```sh
-cd ~/void
-rm README.md pkg.sh
+cd ~/void/config
 stow -t ~/ *
 ```
 Now logout or reboot and hopefully you have something like this:
