@@ -6,7 +6,7 @@ I tried to make it minimal yet available to use all the tools I need and without
 
 First thing after installation we need internet connection. If you have wired connection it is a little easier but setting up wireless is not hard at all:
 
-```sh
+```shell
 # show network interfaces
 ip link show
 # copy wpa conf 
