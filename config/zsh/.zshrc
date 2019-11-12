@@ -25,6 +25,7 @@ zplug "colored-man-pages", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug "lib/directories", from:oh-my-zsh
 zplug "lib/history", from:oh-my-zsh
+zplug "lib/grep", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "themes/agnoster", from:oh-my-zsh, as:theme
