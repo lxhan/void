@@ -52,3 +52,6 @@ sudo xbps-install -Sy \
     vscode \
     python3 \
     python3-pip \
+    # fonts
+    font-Siji \
+    termsyn-font
