@@ -16,7 +16,7 @@ ip link set up <interface_name>
 # set network name and password
 wpa_passphrase <ssid> <key> >> /etc/wpa_supplicant/wpa_supplicant-<interface_name>.conf
 # enable dhcpcd 
-ln -s /etc/dv/dhcpcd /var/service
+ln -s /etc/sv/dhcpcd /var/service
 # enable wpa_supplicant
 ln -s /etc/sv/wpa_supplicant /var/service
 # restart dhcpcd
