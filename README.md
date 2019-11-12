@@ -62,6 +62,14 @@ chmod +x pkg.sh
 ```
 **Attention!** `pkg.sh` contains only 2 commands: `xbps-install -Syu` and `xbps-install -S ...packages`. You can remove all packages under `#optional` or add more. Script is only a shortcut so you don't have to type package names.
 
+# Fonts
+
+Install additional fonts for polybar:
+```sh
+chmod +x fonts/fonts.sh
+./fonts/fonts.sh
+```
+
 # Configs
 
 To install configs go to void directory which you cloned in previous step:
