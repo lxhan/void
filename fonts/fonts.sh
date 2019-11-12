@@ -1,16 +1,12 @@
-if [ -d mononoki ]; then
-    echo "installing mononoki font..."
-    cp -r mononoki ~/.local/share/fonts
-else
-    echo "can't find mononoki"
+if [ ! -d ~/.local/share/fonts ]; then
+    echo "making fonts directory..."
+    mkdir -p ~/.local/share/fonts
 fi
 
-
-if [ -f IosevkaNerdFontComplete.ttf ]; then
-    echo "installing iosevka font..."
+if [ -d ~/.local/share/fonts ]; then
+    echo "copying to fonts directory..."
+    cp -r mononoki ~/.local/share/fonts
     cp IosevkaNerdFontComplete.ttf ~/.local/share/fonts
-else
-    echo "can't find iosevka"
 fi
 
 if [ -d ~/.local/share/fonts/mononoki ] && [ -f ~/.local/share/fonts/IosevkaNerdFontComplete.ttf ]; then

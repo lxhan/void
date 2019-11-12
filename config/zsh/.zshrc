@@ -19,16 +19,17 @@ source ~/.zplug/init.zsh
 
 # plugins
 zplug "plugins/compleat", from:oh-my-zsh
-zplug "extract", from:oh-my-zsh
-zplug "copyfile", from:oh-my-zsh
-zplug "colored-man-pages", from:oh-my-zsh
+zplug "plugins/extract", from:oh-my-zsh
+zplug "plugins/copyfile", from:oh-my-zsh
+zplug "plugins/colored-man-pages", from:oh-my-zsh
+zplug "lib/theme-and-appearance", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug "lib/directories", from:oh-my-zsh
 zplug "lib/history", from:oh-my-zsh
 zplug "lib/grep", from:oh-my-zsh
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "zsh-users/zsh-autosuggestions"
-zplug "themes/agnoster", from:oh-my-zsh, as:theme
+zplug "themes/agnoster", from:oh-my-zsh
 
 if ! zplug check --verbose; then
     printf "Install? [Y/n]: "

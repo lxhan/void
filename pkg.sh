@@ -1,15 +1,11 @@
 sudo xbps-install -Syu &&
 
 sudo xbps-install -Sy \
-    # minimal 
     xorg-minimal \
     xorg-fonts \
     xf86-input-synaptics \
     xf86-input-evdev \
     xf86-video-intel \
-    # xf86-video-ati \ ATI
-    # xf86-video-amdgpu \ AMD
-    # xf86-video-nouveau \ NVIDIA
     alsa-utils \
     openntpd \
     simple-mtpfs \
@@ -21,11 +17,13 @@ sudo xbps-install -Sy \
     xbacklight \
     xwinwrap \
     tlp \
-    # optional
+    xmodmap \
+    xrandr \
     xrdb \
     xtitle \
     xclip \
     xprop \
+    lm_sensors \
     rsync \
     curl \
     wget \
@@ -47,11 +45,10 @@ sudo xbps-install -Sy \
     rofi \
     dmenu \
     firefox \
-    telegram-desktop
+    telegram-desktop \
     nodejs \
     vscode \
     python3 \
     python3-pip \
-    # fonts
     font-Siji \
     termsyn-font

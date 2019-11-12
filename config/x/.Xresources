@@ -52,11 +52,11 @@ URxvt*color14: #93e0e3
 URxvt*color15: #ffffff
 
 ! fonts
-URxvt*font:                 	xft:mononoki Nerd Font:style=Regular:size=13,xft:Monospace:regular:size=13
-URxvt*imFont:               	xft:mononoki Nerd Font:style=Regular:size=13,xft:Monospace:regular:size=13
-URxvt*boldFont:             	xft:mononoki Nerd Font:style=Bold:size=13,xft:Monospace:bold:size=13
-URxvt*italicFont:           	xft:mononoki Nerd Font:style=Italic:size=13,xft:Monospace:italic:size=13
-URxvt*boldItalicFont:     		xft:mononoki Nerd Font:style=BoldItalic:size=13,xft:Monospace:regular:size=13
+URxvt*font:                 	xft:mononoki:style=Regular:size=13,xft:Monospace:regular:size=13
+URxvt*imFont:               	xft:mononoki:style=Regular:size=13,xft:Monospace:regular:size=13
+URxvt*boldFont:             	xft:mononoki:style=Bold:size=13,xft:Monospace:bold:size=13
+URxvt*italicFont:           	xft:mononoki:style=Italic:size=13,xft:Monospace:italic:size=13
+URxvt*boldItalicFont:     		xft:mononoki:style=BoldItalic:size=13,xft:Monospace:regular:size=13
 ! run :.!fc-list | grep <font-name>
 
 ! perl extensions
