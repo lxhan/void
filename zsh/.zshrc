@@ -1,40 +1,46 @@
-export ZSH=$HOME/.oh-my-zsh
-
 # start gui
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
 	exec startx
 fi
 
-# theme
-ZSH_THEME="agnoster"
+# zplug
+if [[ ! -d ~/.zplug ]]; then
+    echo "zplug not installed, installing now..."
+    curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+fi
 
-# to remove name from prompt
-DEFAULT_USER=$USER
+source ~/.zplug/init.zsh
 
-# plug
-plugins=(
-    git
-    compleat
-    cp
-    copyfile
-    copydir
-    extract
-    history
-    colored-man-pages
-    colorize
-    zsh-syntax-highlighting
-    zsh-autosuggestions
-)
+# plugins
+zplug "plugins/compleat", from:oh-my-zsh
+zplug "extract", from:oh-my-zsh
+zplug "copyfile", from:oh-my-zsh
+zplug "colored-man-pages", from:oh-my-zsh
+zplug "lib/completion", from:oh-my-zsh
+zplug "lib/directories", from:oh-my-zsh
+zplug "lib/history", from:oh-my-zsh
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "themes/agnoster", from:oh-my-zsh, as:theme
 
-source $ZSH/oh-my-zsh.sh
+if ! zplug check --verbose; then
+    printf "Install? [Y/n]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
 
-# nvm
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+zplug load
+
+# zsh vars 
+export DEFAULT_USER=$USER
+export EDITOR=nvim
+export TERMINAL=urxvt
 
 # aliases
 alias v="nvim"                                                                                                     
 alias py="python3"                                                                                                
 alias pip="pip3"
+## void 
 alias xi="sudo xbps-install -S"
 alias xq="sudo xbps-query -R"

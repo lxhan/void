@@ -1,4 +1,4 @@
-sudo xbps-install -Syu &
+sudo xbps-install -Syu &&
 
 sudo xbps-install -Sy \
     # minimal 
@@ -15,14 +15,18 @@ sudo xbps-install -Sy \
     libXinerama-devel \
     wireless_tools \
     xdg-utils \
-    xprop \
-    xwinwrap \
     xbacklight \
+    xwinwrap \
+    tlp \
+    # optional
     xrdb \
     xtitle \
     xclip \
-    tlp \
-    # optional
+    xprop \
+    rsync \
+    curl \
+    wget \
+    bluez \
     bspwm \
     sxhkd \
     polybar \
@@ -40,5 +44,8 @@ sudo xbps-install -Sy \
     rofi \
     dmenu \
     firefox \
-    vscode \
     telegram-desktop
+    nodejs \
+    vscode \
+    python3 \
+    python3-pip \
