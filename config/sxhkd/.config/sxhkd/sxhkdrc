@@ -40,7 +40,10 @@ super + shift + x
 
 # scrot
 Print
-    scrot 'void-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+    scrot '%Y-%m-%d-%s_full_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/screenshots'
+
+shift + Print
+    scrot -s '%Y-%m-%d-%s_part_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/screenshots'
 
 # raises volume
 XF86AudioRaiseVolume
