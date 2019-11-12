@@ -65,15 +65,15 @@ chmod +x pkg.sh
 
 # Links
 
-[Void Linux Handbook](https://docs.voidlinux.org/print.html)
-[Configuring wifi in Linux with wpa_supplicant](https://shapeshed.com/linux-wifi/)
-[GNU libc locales disabled by default](https://voidlinux.org/news/2013/05/libc-locales-disabled.html)
-[Dotfiles examples](https://github.com/jmdaly/dotfiles)
-[Another void+bspwm implementation](https://github.com/Speyll/void-bspwm)
-[Dual monitor setup with BSPWM and Polybar](https://protesilaos.com/codelog/multihead-bspwm-polybar/)
-[How to set up a fresh Ubuntu desktop using only dotfiles and bash script](https://victoria.dev/blog/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
+- [Void Linux Handbook](https://docs.voidlinux.org/print.html)
+- [Configuring wifi in Linux with wpa_supplicant](https://shapeshed.com/linux-wifi/)
+- [GNU libc locales disabled by default](https://voidlinux.org/news/2013/05/libc-locales-disabled.html)
+- [Dotfiles examples](https://github.com/jmdaly/dotfiles)
+- [Another void+bspwm implementation](https://github.com/Speyll/void-bspwm)
+- [Dual monitor setup with BSPWM and Polybar](https://protesilaos.com/codelog/multihead-bspwm-polybar/)
+- [How to set up a fresh Ubuntu desktop using only dotfiles and bash script](https://victoria.dev/blog/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
 
 # TODO
 
-- [] Make installation process with one script
-- [] Make distro agnostic
+- [ ] Make installation process with one script
+- [ ] Make distro agnostic
