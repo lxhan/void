@@ -1,5 +1,4 @@
 # Enter the void 
-___
 
 *screenshots here*
 
