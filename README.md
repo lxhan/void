@@ -1,12 +1,8 @@
-# Enter the void 
-___
-
-*screenshots here*
+# Enter the void
 
 I tried to make it minimal yet available to use all the tools I need and without refusing some decorations. It can be any distro (with some modifications) but I really like void at the moment for simplicity and minimalism. If you want to replicate something similar in void, install it on your computer and follow instructions below.
 
 # Network 
-___
 
 First thing after installation we need internet connection. If you have wired connection it is a little easier but setting up wireless is not hard at all:
 
@@ -40,12 +36,12 @@ dhcpcd <interface_name>
 ```
 
 # Mirrors
-___
 
 To make updating and installing packages fast we need to change mirror according to your region. 
 
+*process explanation here*
+
 # Packages
-___
 
 1. Clone this repo if you haven't already:
  
@@ -64,22 +60,32 @@ sudo xbps-install -S git
 chmod +x pkg.sh
 ./pkg.sh
 ```
-
 **Attention!** `pkg.sh` contains only 2 commands: `xbps-install -Syu` and `xbps-install -S ...packages`. You can remove all packages under `#optional` or add more. Script is only a shortcut so you don't have to type package names.
 
-# Links
-___
+# Configs
 
-[Void Linux Handbook](https://docs.voidlinux.org/print.html)
-[Configuring wifi in Linux with wpa_supplicant](https://shapeshed.com/linux-wifi/)
-[GNU libc locales disabled by default](https://voidlinux.org/news/2013/05/libc-locales-disabled.html)
-[Dotfiles examples](https://github.com/jmdaly/dotfiles)
-[Another void+bspwm implementation](https://github.com/Speyll/void-bspwm)
-[Dual monitor setup with BSPWM and Polybar](https://protesilaos.com/codelog/multihead-bspwm-polybar/)
-[How to set up a fresh Ubuntu desktop using only dotfiles and bash script](https://victoria.dev/blog/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
+To install configs go to void directory which you cloned in previous step:
+
+```sh
+cd ~/void
+rm README.md pkg.sh
+stow -t ~/ *
+```
+Now logout or reboot and hopefully you have something like this:
+
+*screenshots here*
+
+# Links
+
+- [Void Linux Handbook](https://docs.voidlinux.org/print.html)
+- [Configuring wifi in Linux with wpa_supplicant](https://shapeshed.com/linux-wifi/)
+- [GNU libc locales disabled by default](https://voidlinux.org/news/2013/05/libc-locales-disabled.html)
+- [Dotfiles examples](https://github.com/jmdaly/dotfiles)
+- [Another void+bspwm implementation](https://github.com/Speyll/void-bspwm)
+- [Dual monitor setup with BSPWM and Polybar](https://protesilaos.com/codelog/multihead-bspwm-polybar/)
+- [How to set up a fresh Ubuntu desktop using only dotfiles and bash script](https://victoria.dev/blog/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
 
 # TODO
-___
 
-- [] Make installation process with one script
-- [] Make distro agnostic
+- [ ] Make installation process with one script
+- [ ] Make distro agnostic
