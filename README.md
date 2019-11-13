@@ -80,7 +80,7 @@ stow -t ~/ *
 ```
 Now logout or reboot and hopefully you have something like this:
 
-[screenshot](screenshots/2019-11-12-230518_1918x1079_scrot.png)
+![screenshot](screenshots/2019-11-12-230518_1918x1079_scrot.png)
 
 # Links
 
