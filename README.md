@@ -39,7 +39,23 @@ dhcpcd <interface_name>
 
 To make updating and installing packages fast we need to change mirror according to your region. 
 
-*process explanation here*
+```sh
+cp /usr/share/xbps.d/*-repository-*.conf /etc/xbps.d/
+vi /etc/xbps.d/*-repository-*.conf
+
+# ex. change to singapore mirror
+repository=https://void.webconverger.org/current
+
+xbps-install -S
+```
+
+# Update
+
+Before installing packages we need to update void. Run update command several times:
+
+```sh
+xbps-install -Su
+```
 
 # Packages
 
@@ -60,7 +76,7 @@ sudo xbps-install -S git
 chmod +x pkg.sh
 ./pkg.sh
 ```
-**Attention!** `pkg.sh` contains only 2 commands: `xbps-install -Syu` and `xbps-install -S ...packages`. You can remove all packages under `#optional` or add more. Script is only a shortcut so you don't have to type package names.
+**Attention!** `pkg.sh` contains only 2 commands: `xbps-install -Syu` and `xbps-install -Sy ...packages`. You can remove packages you don't need or add more. Script is only a shortcut so you don't have to type package names.
 
 # Fonts
 
@@ -82,6 +98,8 @@ Now logout or reboot and hopefully you have something like this:
 
 ![screenshot](screenshots/2019-11-12-230518_1918x1079_scrot.png)
 
+**Remark**: you may have to reboot several times and source .zshrc but eventually if you did everything right it should be almost the same as on screenshot except wallpaper.
+
 # Links
 
 - [Void Linux Handbook](https://docs.voidlinux.org/print.html)
@@ -91,6 +109,7 @@ Now logout or reboot and hopefully you have something like this:
 - [Another void+bspwm implementation](https://github.com/Speyll/void-bspwm)
 - [Dual monitor setup with BSPWM and Polybar](https://protesilaos.com/codelog/multihead-bspwm-polybar/)
 - [How to set up a fresh Ubuntu desktop using only dotfiles and bash script](https://victoria.dev/blog/how-to-set-up-a-fresh-ubuntu-desktop-using-only-dotfiles-and-bash-scripts/)
+- [Polybar themes](https://github.com/adi1090x/polybar-themes)
 
 # TODO
 
