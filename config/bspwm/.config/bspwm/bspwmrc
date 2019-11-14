@@ -5,9 +5,7 @@ $HOME/.config/polybar/launch.sh
 $HOME/.config/bspwm/external_monitor.sh
 
 # wallpaper
-# hsetroot -full ~/Pictures/wallpapers/wallpaper1.jpg &
 feh --bg-center ~/Pictures/wallpapers/wallpaper1.jpg ~/Pictures/wallpapers/wallpaper1.jpg
-
 
 # compton
 pkill compton
