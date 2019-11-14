@@ -50,5 +50,7 @@ alias v="nvim"
 alias py="python3"                                                                                                
 alias pip="pip3"
 ## void 
+alias xu="sudo xbps-install -Syu"
 alias xi="sudo xbps-install -S"
 alias xq="sudo xbps-query -R"
+alias xr="sudo xbps-remove -R"
