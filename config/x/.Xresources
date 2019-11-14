@@ -7,11 +7,10 @@ URxvt*iso14755:         false
 URxvt*iso14755_52:      false
 URxvt*meta8:            false
 URxvt*metaSendsEscape:  true
-URxvt*iconFile:  		/usr/share/icons/Sardi-Mono/scalable/apps/terminal.svg
 
 ! appearance
 URxvt*depth:             32
-!URxvt*transparent:      true
+URxvt*transparent:      true
 URxvt*shading:          30
 URxvt*background:       rgba:2222/2222/2222/AAAA
 !URxvt*background:       [80]#404552
