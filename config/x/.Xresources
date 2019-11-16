@@ -1,36 +1,19 @@
-! general settings
-URxvt*saveline:         15000
-URxvt*termName:         xterm-256color
-URxvt*urgentOnBell:     false
-URxvt*visualBell:       false
-URxvt*iso14755:         false
-URxvt*iso14755_52:      false
-URxvt*meta8:            false
-URxvt*metaSendsEscape:  true
+! general
+URxvt*saveline: 15000
+URxvt*iso14755: false
+URxvt*urlLauncher: firefox
+URxvt*underlineURLs: true
+URxvt*urlButton: 1
+URxvt*geometry: 90x30
 
 ! appearance
-URxvt*depth:             32
-URxvt*transparent:      true
-URxvt*shading:          30
-URxvt*background:       rgba:2222/2222/2222/AAAA
-!URxvt*background:       [80]#404552
-!URxvt*background:       [70]#3F424A
-!URxvt*background:        [80]#282A36
-URxvt*foreground:        #F8F8FF
-URxvt*underlineColor:    #4682B4
-URxvt*highlightColor:    #4682B4
-URxvt*throughColor:      Blue
-URxvt*cursorColor:       #c5c8c6
-URxvt*scrollBar:         false
-URxvt*scrollTtyOutput:   false
-URxvt*scrollWithBuffer:  true
-URxvt*scrollTtyKeypress: true
-URxvt*internalBorder:    0
-URxvt*externalBorder:    0
-URxvt*colorIT:      	 #87af5f
-URxvt*colorBD:      	 #c5c8c6
-URxvt*colorUL:      	 #87afd7
-
+URxvt*scrollBar: false
+URxvt*transparent: true
+URxvt*shading: 30
+URxvt*foreground: #f8f8ff
+URxvt*underlineColor: #4682b4
+URxvt*highlightColor: #4682b4
+URxvt*cursorColor: #c5c8c6
 
 ! colors
 URxvt*color0: #3f3f3f
@@ -51,38 +34,11 @@ URxvt*color14: #93e0e3
 URxvt*color15: #ffffff
 
 ! fonts
-URxvt*font:                 	xft:mononoki:style=Regular:size=13,xft:Monospace:regular:size=13
-URxvt*imFont:               	xft:mononoki:style=Regular:size=13,xft:Monospace:regular:size=13
-URxvt*boldFont:             	xft:mononoki:style=Bold:size=13,xft:Monospace:bold:size=13
-URxvt*italicFont:           	xft:mononoki:style=Italic:size=13,xft:Monospace:italic:size=13
-URxvt*boldItalicFont:     		xft:mononoki:style=BoldItalic:size=13,xft:Monospace:regular:size=13
-! run :.!fc-list | grep <font-name>
+URxvt*font: xft:mononoki:style=Regular:size=13,xft:Monospace:regular:size=13
+URxvt*imFont: xft:mononoki:style=Regular:size=13,xft:Monospace:regular:size=13
+URxvt*boldFont: xft:mononoki:style=Bold:size=13,xft:Monospace:bold:size=13
+URxvt*italicFont: xft:mononoki:style=Italic:size=13,xft:Monospace:italic:size=13
+URxvt*boldItalicFont: xft:mononoki:style=BoldItalic:size=13,xft:Monospace:regular:size=13
 
 ! perl extensions
-URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,resize-font
-!URxvt*perl-ext-common:  default,clipboard,url-select,keyboard-select,tabbed
-
-! macros for clipboard and selection
-URxvt*copyCommand:      xclip -i -selection clipboard
-URxvt*pasteCommand:     xclip -o -selection clipboard
-URxvt*keysym.M-c:       perl:clipboard:copy
-URxvt*keysym.m-v:       perl:clipboard:paste
-URxvt*keysym.M-C-v:     perl:clipboard:paste_escaped
-URxvt*keysym.M-Escape:  perl:keyboard-select:activate
-URxvt*keysym.M-s:       perl:keyboard-select:search
-URxvt*keysym.M-u:       perl:url-select:select_next
-URxvt*resize-font.smaller:	C-Down
-URxvt*resize-font.bigger:	C-Up
-URxvt*urlLauncher:      firefox
-URxvt*underlineURLs:    true
-URxvt*urlButton:        1
-URxvt*geometry: 		90x30
-
-! tabbed
-URxvt*tabbed.tabbar-fg: 4
-URxvt*tabbed.tabbar-bg: 16
-URxvt*tabbed.tab-fg:    15
-URxvt*tabbed.tab-bg:    4
-URxvt*buffered:         false
-URxvt*keysym.Control-Shift-C: perl:clipboard:copy
-URxvt*keysym.Control-Shift-V: perl:clipboard:paste
+URxvt*perl-ext-common: default, matcher
