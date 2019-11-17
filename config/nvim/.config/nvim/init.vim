@@ -28,6 +28,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " python
 Plug 'davidhalter/jedi-vim'
@@ -86,6 +87,7 @@ let g:airline_symbols.maxlinenr = ''
 let mapleader = ','
 map <C-b> :NERDTreeToggle<CR>
 map <Leader> <Plug>(easymotion-prefix)
+map <C-n> :noh<CR>
 
 "" tabs
 nnoremap <Tab> gt
