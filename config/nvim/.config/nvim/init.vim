@@ -13,6 +13,7 @@ set noswapfile
 " plugins
 call plug#begin('~/.vim/plugged')
 
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'jiangmiao/auto-pairs'
@@ -28,7 +29,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'leafgarland/typescript-vim'
 Plug 'Quramy/tsuquyomi'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " python
 Plug 'davidhalter/jedi-vim'
@@ -36,13 +36,16 @@ Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
 
 " html, css
 Plug 'hail2u/vim-css3-syntax'
-Plug 'gorodinskiy/vim-coloresque'
+Plug 'gko/vim-coloresque'
 Plug 'mattn/emmet-vim'
 
 " color
 Plug 'junegunn/seoul256.vim'
 
 call plug#end()
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
 " eye candy
 let g:seoul256_background = 233
