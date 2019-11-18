@@ -4,11 +4,15 @@ set number relativenumber
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set clipboard+=unnamedplus
 set nocompatible
 set hlsearch
 set incsearch
+set ignorecase
+set smartcase
 set nobackup
 set noswapfile
+filetype plugin on
 
 " plugins
 call plug#begin('~/.vim/plugged')
@@ -19,11 +23,13 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'kien/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vimwiki/vimwiki'
 
 " js, ts
 Plug 'jelera/vim-javascript-syntax'
@@ -46,6 +52,9 @@ call plug#end()
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/Documents/wiki/', 'syntax': 'markdown', 'ext': 'md'}]
 
 " eye candy
 let g:seoul256_background = 233
@@ -95,6 +104,10 @@ map <C-n> :noh<CR>
 "" tabs
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
+
+"" split
+noremap <Leader>h :<C-u>split<CR>
+noremap <Leader>v :<C-u>vsplit<CR>
 
 " emmet
 let g:user_emmet_leader_key='<C-E>'
