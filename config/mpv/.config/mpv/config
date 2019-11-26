@@ -4,20 +4,21 @@ autofit-larger=90%x90%
 
 # Video control
 keep-open
-pause
+# pause
 
 # Cache
 cache=yes
-cache-default=8192
+cache-default=4000000
+cache-backbuffer=250000
 cache-secs=180
 
 # Youtube dl / hardware acceleration
-ytdl-format=best[height<=?480]+bestaudio/best
+ytdl-format=best[height<=?720]+bestaudio/best
 hwdec=vdpau
 hwdec-codecs=all
 
 # Subtitle 
-slang=fr
+slang=en
 sub-font="Hack"
 sub-font-size=14
 sub-color="#75ff00"

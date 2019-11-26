@@ -49,6 +49,8 @@ export TERMINAL=urxvt
 alias v="nvim"                                                                                                     
 alias py="python3"                                                                                                
 alias pip="pip3"
+alias nw="newsboat -u ~/.newsboat/urls -c ~/.newsboat/cache.db -C ~/.newsboat/config"
+alias yt="newsboat -u ~/.newsboat/yturls -c ~/.newsboat/ytcache.db -C ~/.newsboat/ytconfig"
 ## void 
 alias xu="sudo xbps-install -Syu"
 alias xi="sudo xbps-install -S"

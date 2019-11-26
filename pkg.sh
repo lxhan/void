@@ -38,6 +38,7 @@ sudo xbps-install -Sy \
     feh \
     scrot \
     mpv \
+    newsboat \
     ranger \
     rxvt-unicode \
     compton \

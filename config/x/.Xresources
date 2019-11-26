@@ -7,10 +7,12 @@ URxvt*urlButton: 1
 URxvt*geometry: 90x30
 
 ! appearance
+URxvt*depth: 32
 URxvt*scrollBar: false
 URxvt*transparent: true
 URxvt*shading: 30
 URxvt*foreground: #f8f8ff
+URxvt*background: #1d1f21
 URxvt*underlineColor: #4682b4
 URxvt*highlightColor: #4682b4
 URxvt*cursorColor: #c5c8c6
