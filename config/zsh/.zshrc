@@ -54,6 +54,8 @@ alias yt="newsboat -u ~/.newsboat/yturls -c ~/.newsboat/ytcache.db -C ~/.newsboa
 alias gw="cd ~/Documents/wiki"
 alias gc="cd ~/Documents/void"
 alias gd="cd ~/Downloads"
+alias uw="gw && git add . && git commit -m 'updated' && git push && cd -"
+alias uc="gc && git add . && git commit -m 'updated' && git push && cd -"
 ## void 
 alias xu="sudo xbps-install -Syu"
 alias xi="sudo xbps-install -S"
